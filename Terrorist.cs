@@ -26,9 +26,9 @@ namespace ConsoleApp1
         }
 
 
-    public void getWeapons()
+    public List<string> getWeapon()
     {
-        Console.WriteLine($"the weapons of {base.getName()} is: {Weapon}");
+        return Weapon;
     }
 
     public void getStatus()
