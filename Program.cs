@@ -12,6 +12,7 @@ namespace Idf
             Uman u1 = new Uman("dfgf",5);
             Terrorist t1 = new Terrorist(5, ["dfs", "df"], "live","dfs",20);
             Console.WriteLine(t1.Rank);
+            IdfOrganization i1 = new IdfOrganization(1948, "aiil zamir", ["Air force","Artillery","Drones"]);
         }
     }
 }
