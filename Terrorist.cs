@@ -13,8 +13,8 @@ namespace ConsoleApp1
         private List<string> Weapon;
         private string Status;
         private string LestLocation;
-        
-        public Terrorist(int rank ,List<string> weapons , string status , string location, string name , int age):base(name,age)
+
+        public Terrorist(int rank, List<string> weapons, string status, string location, string name, int age) : base(name, age)
         {
             Rank = rank;
             Weapon = weapons;
@@ -23,25 +23,28 @@ namespace ConsoleApp1
 
         }
 
-    public string GetRank()
+
+        public int GetRank()
         {
-            return $"the rank of {base.GetName()} is: {Rank}";
+            return Rank;
+        }
+       
+
+        public List<string> GetWeapon()
+        {
+            return Weapon;
         }
 
+        public string GetStatus()
+        {
+            return $"the status of {base.GetName()} is: {Status}";
 
-    public List<string> GetWeapon()
-    {
-        return Weapon;
-    }
-
-    public string GetStatus()
-    {
-        return $"the status of {base.GetName()} is: {Status}";
-    }
-    public string GetLocation()
-    {
-       return LestLocation;
-    }
+          
+        }
+        public string GetLocation()
+        {
+            return LestLocation;
+        }
 
     }
 }

@@ -23,5 +23,13 @@ namespace ConsoleApp1
                 ListOfTerrorist = listOfTerrorist;
             }
         
+
+
+        public List<Terrorist> GetTeroristList()
+        {
+            return ListOfTerrorist;
+        }
+
+
     }
 }
