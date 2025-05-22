@@ -23,6 +23,7 @@ namespace ConsoleApp1
 
         }
 
+<<<<<<< HEAD
         public int GetRank()
         {
             return Rank;
@@ -38,6 +39,25 @@ namespace ConsoleApp1
 
             return $"the status of {base.GetName()} is: {Status}";
 
+=======
+
+        public int GetRank()
+        {
+            return Rank;
+        }
+       
+
+        public List<string> GetWeapon()
+        {
+            return Weapon;
+        }
+
+        public string GetStatus()
+        {
+            return $"the status of {base.GetName()} is: {Status}";
+
+          
+>>>>>>> new
         }
         public string GetLocation()
         {
