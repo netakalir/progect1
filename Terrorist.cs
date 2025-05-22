@@ -9,7 +9,7 @@ namespace ConsoleApp1
 {
     public class Terrorist : Uman
     {
-        public int Rank;
+        private int Rank;
         private List<string> Weapon;
         private string Status;
         private string LestLocation;
@@ -23,9 +23,9 @@ namespace ConsoleApp1
 
         }
 
-    public void GetRank()
+    public string GetRank()
         {
-            Console.WriteLine($"the rank of {base.GetName()} is: {Rank}");
+            return $"the rank of {base.GetName()} is: {Rank}";
         }
 
 
@@ -34,9 +34,9 @@ namespace ConsoleApp1
         return Weapon;
     }
 
-    public void GetStatus()
+    public string GetStatus()
     {
-        Console.WriteLine($"the status of {base.GetName()} is: {Status}");
+        return $"the status of {base.GetName()} is: {Status}";
     }
     public string GetLocation()
     {
