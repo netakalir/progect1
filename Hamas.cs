@@ -10,19 +10,23 @@ namespace ConsoleApp1
 {
     public class Hamas
     {
-        public class HamasOrganization
+        private int DateOfEstablishment;
+        private string CurrentComendur;
+        private List<Terrorist> ListOfTerrorist;
+
+        public Hamas(int dateOfEstablishment, string currentComendur, List<Terrorist> listOfTerrorist)
         {
-            private int DateOfEstablishment;
-            private string CurrentComendur;
-            private List<Terrorist> ListOfTerrorist;
-
-
-            public HamasOrganization(int dateOfEstablishment, string currentComendur, List<Terrorist> listOfTerrorist)
-            {
-                DateOfEstablishment = dateOfEstablishment;
-                CurrentComendur = currentComendur;
-                ListOfTerrorist = listOfTerrorist;
-            }
+            DateOfEstablishment = dateOfEstablishment;
+            CurrentComendur = currentComendur;
+            ListOfTerrorist = listOfTerrorist;
         }
+
+        public List<Terrorist> GetTeroristList()
+        {
+            return ListOfTerrorist;
+        }
+
+        
+
     }
 }

@@ -22,9 +22,9 @@ namespace ConsoleApp1
             AttackCapabilities = attackCapabilities;
         }
 
-        public void GetComendurName()
+        public string GetComendurName()
         {
-            Console.WriteLine($"Comendur name is {CurrentComendur}");
+            return $"Comendur name is {CurrentComendur}";
         }
         public List<string> GetAttackCapabilities()
         {
