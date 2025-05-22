@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Idf;
-//using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ConsoleApp1
 {

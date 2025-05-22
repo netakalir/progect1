@@ -12,7 +12,7 @@ namespace ConsoleApp1
     public class AMN
     {
         private List<Terrorist> terrorists;
-        Dictionary<string,int> WeaponsrRating = new Dictionary<string,int>()
+        Dictionary<string, int> WeaponsrRating = new Dictionary<string, int>()
         {
             {"knife",1},
             {"gun",2},
@@ -20,20 +20,18 @@ namespace ConsoleApp1
             {"AK47",3}
         };
 
-
-
-        public AMN(List <Terrorist> existingTerrorists)
+        public AMN(List<Terrorist> existingTerrorists)
 
         {
             terrorists = existingTerrorists ?? throw new ArgumentNullException(nameof(existingTerrorists));
         }
 
-        
+
 
         public Terrorist RiskCalculation()
         {
             int Max = 0;
-            Terrorist DTerorist=new Terrorist(5, ["gun"], "live", "gbalia", "mhmod", 25);
+            Terrorist DTerorist = new Terrorist(5, ["gun"], "live", "gbalia", "mhmod", 25);
             foreach (Terrorist ter in terrorists)
             {
                 int Max1 = 0;

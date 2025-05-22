@@ -20,9 +20,9 @@ namespace ConsoleApp1
         }
 
         public string GetName()
-            {
-                return Name;
-            }
+        {
+            return Name;
+        }
 
         public int GetAge()
         {
