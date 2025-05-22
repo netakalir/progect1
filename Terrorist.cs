@@ -12,28 +12,35 @@ namespace ConsoleApp1
         public int Rank;
         private List<string> Weapon;
         private string Status;
-
-    public Terrorist(int rank ,List<string> weapons , string status , string name , int age):base(name,age)
+        private string LestLocation;
+        
+        public Terrorist(int rank ,List<string> weapons , string status , string location, string name , int age):base(name,age)
         {
             Rank = rank;
             Weapon = weapons;
             Status = status;
+            LestLocation = location;
+
         }
 
-    public void getRank()
+    public void GetRank()
         {
-            Console.WriteLine($"the rank of {base.getName()} is: {Rank}");
+            Console.WriteLine($"the rank of {base.GetName()} is: {Rank}");
         }
 
 
-    public List<string> getWeapon()
+    public List<string> GetWeapon()
     {
         return Weapon;
     }
 
-    public void getStatus()
+    public void GetStatus()
     {
-        Console.WriteLine($"the status of {base.getName()} is: {Status}");
+        Console.WriteLine($"the status of {base.GetName()} is: {Status}");
+    }
+    public string GetLocation()
+    {
+       return LestLocation;
     }
 
     }

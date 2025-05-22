@@ -10,14 +10,14 @@ namespace ConsoleApp1
 {
     public class Hamas
     {
-        public class IdfOrganization
+        public class HamasOrganization
         {
             private int DateOfEstablishment;
             private string CurrentComendur;
             private List<Terrorist> ListOfTerrorist;
 
 
-            public IdfOrganization(int dateOfEstablishment, string currentComendur, List<Terrorist> listOfTerrorist)
+            public HamasOrganization(int dateOfEstablishment, string currentComendur, List<Terrorist> listOfTerrorist)
             {
                 DateOfEstablishment = dateOfEstablishment;
                 CurrentComendur = currentComendur;

@@ -19,12 +19,12 @@ namespace ConsoleApp1
             Age = age;
         }
 
-        public string getName()
+        public string GetName()
             {
                 return Name;
             }
 
-        public int getAge()
+        public int GetAge()
         {
             return Age;
         }
